@@ -1,7 +1,7 @@
 ---
 # tasks file for ansible_role_epel-release
 
-- name: "EPEL | {{ epel-release_state.state }}"
+- name: "EPEL | {{ epel-release_state }}"
   yum:
     name: epel-release
     state: "{{ epel-release_state }}"
