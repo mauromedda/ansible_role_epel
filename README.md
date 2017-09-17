@@ -1,17 +1,17 @@
 ansible_role_epel
 ==================
 
-This is a simple Ansible role that installs/uninstall the epel-release meta package.
+This is a simple Ansible role that installs/uninstall the epel_release meta package.
 This package contains the Extra Packages for Enterprise Linux (EPEL) repository.
 
 Variables
 ---------
 
 ```yaml
-epel-release_installed: true
+epel_release_installed: true
 ```
 
- * epel-release_installed: Default: true. Put false to uninstall the epel-release.
+ * epel_release_installed: Default: true. Put false to uninstall the epel_release.
 
 Example Playbook
 ----------------
@@ -23,7 +23,7 @@ See below an example of usage for the module.
       connection: local
       become: true
       roles:
-         - { role: mauromedda.ansible_role_epel, epel-release_installed: true }
+         - { role: mauromedda.ansible_role_epel, epel_release_installed: true }
 ```
 
 License

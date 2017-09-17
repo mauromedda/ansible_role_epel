@@ -1,6 +1,6 @@
 ---
-# defaults file for ansible_role_epel-release
+# defaults file for ansible_role_epel_release
 
-epel-release_installed: true # Default: true. Install epel-release if absent
+epel_release_installed: true # Default: true. Install epel-release if absent
 
-epel-release_state: "{{ 'present' if epel-release_installed==true else 'absent' }}"
+epel_release_state: "{{ 'present' if epel_release_installed==true else 'absent' }}"

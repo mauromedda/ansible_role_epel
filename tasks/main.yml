@@ -1,11 +1,11 @@
 ---
-# tasks file for ansible_role_epel-release
+# tasks file for ansible_role_epel_release
 
-- name: "EPEL | {{ epel-release_state }}"
+- name: "EPEL | {{ epel_release_state }}"
   yum:
     name: epel-release
-    state: "{{ epel-release_state }}"
+    state: "{{ epel_release_state }}"
   tags:
     - install
-    - epel-release
+    - epel_release
     - uninstall
