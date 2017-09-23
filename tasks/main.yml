@@ -5,6 +5,8 @@
   yum:
     name: epel-release
     state: "{{ epel_release_state }}"
+  notify:
+    - makecache
   tags:
     - install
     - epel_release
