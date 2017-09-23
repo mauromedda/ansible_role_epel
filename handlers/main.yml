@@ -1,9 +1,0 @@
----
-# handlers file for ansible_role_epel_release
-
-- name: makecache
-  shell: |
-    yum clean all && \
-    yum makecache
-  tags:
-    - skip_ansible_lint
